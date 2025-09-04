@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FLASHPOINT - Bike Rental System</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>FLASHPOINT 🚴 Bike Rental System</h1>
+
+    <section>
+        <h2>Rent a Bike</h2>
+        <form action="rent.php" method="POST">
+            <input type="text" name="user_name" placeholder="Your Name" required>
+            <input type="number" name="bike_id" placeholder="Bike ID" required>
+            <button type="submit">Rent</button>
+        </form>
+    </section>
+
+    <section>
+        <h2>Return a Bike</h2>
+        <form action="return_bike.php" method="POST">
+            <input type="number" name="bike_id" placeholder="Bike ID" required>
+            <button type="submit">Return</button>
+        </form>
+    </section>
+
+    <section>
+        <h2>View Bikes</h2>
+        <a href="view_bikes.php">See Available Bikes</a>
+    </section>
+</body>
+</html>
